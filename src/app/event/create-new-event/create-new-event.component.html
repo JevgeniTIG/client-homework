@@ -1,0 +1,32 @@
+<form class="new-event-form" [formGroup]="eventForm">
+
+  <mat-form-field class="event-information" appearance="fill">
+    <mat-label>Description</mat-label>
+    <input
+           matInput
+           minlength="1"
+           formControlName="basicInfo"
+    >
+  </mat-form-field>
+  <mat-form-field class="event-location" appearance="fill">
+    <mat-label>Location</mat-label>
+    <input
+      matInput
+      minlength="1"
+      formControlName="location"
+    >
+  </mat-form-field>
+  <mat-form-field class="event-time" appearance="fill">
+    <mat-label>Time of event</mat-label>
+    <input
+      matInput
+      formControlName="timeOfEvent"
+      placeholder="2020-10-30 17:00">
+  </mat-form-field>
+
+  <button (click)="submit()">
+    Submit
+  </button>
+
+</form>
+

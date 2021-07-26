@@ -1,0 +1,33 @@
+.new-event-form {
+  margin-left: 20px;
+}
+.test-div {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.event-information {
+  width: 50%;
+  margin-right: 4px;
+
+}
+.event-location {
+  width: 16%;
+  margin-right: 4px;
+}
+
+.event-date {
+  width: 40px;
+}
+
+button {
+  border: none;
+  color: white;
+  border-radius: 2px;
+  background: blueviolet;
+  margin-left: 10px;
+}
+
+button:focus {
+  outline:0 !important;
+}

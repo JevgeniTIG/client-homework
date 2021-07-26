@@ -1,0 +1,30 @@
+.side-toolbar {
+  height: 100%;
+  display: inline-block;
+}
+
+.side-menu-create-event {
+  display: inline-flex;
+  margin-left: 10px;
+  margin-top: 100px;
+}
+
+.side-menu {
+  display: inline-flex;
+  margin-left: 10px;
+  margin-top: 40px;
+}
+
+.text-menu {
+  margin-top: -3px;
+  margin-left: 10px;
+}
+button{
+  border: none;
+  background-color: transparent;
+}
+
+button:focus {
+  outline:0 !important;
+}
+
