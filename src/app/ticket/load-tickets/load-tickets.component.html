@@ -1,0 +1,108 @@
+<form class="load-tickets-form" [formGroup]="loadForm">
+
+  <mat-form-field class="ticket-information" appearance="fill">
+    <mat-label>Description</mat-label>
+    <input
+      type="text"
+      matInput
+      minlength="1"
+      formControlName="basicInfo"
+    >
+  </mat-form-field>
+  <mat-form-field class="validation-code" appearance="fill">
+    <mat-label>Validation Code</mat-label>
+    <input
+      type="text"
+      matInput
+      minlength="1"
+      formControlName="validationCode"
+    >
+  </mat-form-field>
+  <mat-form-field class="event-id" appearance="fill">
+    <mat-label>Event ID</mat-label>
+    <input
+      matInput
+      formControlName="id">
+  </mat-form-field>
+
+  <button *ngIf="!loadForm2Activated" (click)="activateForm2()">
+    +
+  </button>
+
+  <button *ngIf="!loadForm2Activated" (click)="submit()">
+    Submit
+  </button>
+
+</form>
+
+
+<form *ngIf="loadForm2Activated" class="load-tickets-form" [formGroup]="loadForm2">
+
+  <mat-form-field class="ticket-information" appearance="fill">
+    <mat-label>Description</mat-label>
+    <input
+      type="text"
+      matInput
+      minlength="1"
+      formControlName="basicInfo"
+    >
+  </mat-form-field>
+  <mat-form-field class="validation-code" appearance="fill">
+    <mat-label>Validation Code</mat-label>
+    <input
+      type="text"
+      matInput
+      minlength="1"
+      formControlName="validationCode"
+    >
+  </mat-form-field>
+  <mat-form-field class="event-id" appearance="fill">
+    <mat-label>Event ID</mat-label>
+    <input
+      matInput
+      formControlName="id">
+  </mat-form-field>
+
+  <button *ngIf="!loadForm3Activated" (click)="activateForm3()">
+    +
+  </button>
+
+  <button *ngIf="!loadForm3Activated" (click)="submit()">
+    Submit
+  </button>
+
+</form>
+
+<form *ngIf="loadForm3Activated" class="load-tickets-form" [formGroup]="loadForm3">
+
+  <mat-form-field class="ticket-information" appearance="fill">
+    <mat-label>Description</mat-label>
+    <input
+      type="text"
+      matInput
+      minlength="1"
+      formControlName="basicInfo"
+    >
+  </mat-form-field>
+  <mat-form-field class="validation-code" appearance="fill">
+    <mat-label>Validation Code</mat-label>
+    <input
+      type="text"
+      matInput
+      minlength="1"
+      formControlName="validationCode"
+    >
+  </mat-form-field>
+  <mat-form-field class="event-id" appearance="fill">
+    <mat-label>Event ID</mat-label>
+    <input
+      matInput
+      formControlName="id">
+  </mat-form-field>
+
+  <button (click)="submit()">
+    Submit
+  </button>
+
+</form>
+

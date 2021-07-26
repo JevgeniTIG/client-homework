@@ -1,0 +1,29 @@
+.load-tickets-form {
+  margin-left: 20px;
+}
+
+.ticket-information {
+  width: 50%;
+  margin-right: 4px;
+}
+
+.validation-code {
+  margin-right: 4px;
+}
+
+.event-id {
+  width: 10%;
+}
+
+
+button {
+  border: none;
+  color: white;
+  border-radius: 2px;
+  background: blueviolet;
+  margin-left: 10px;
+}
+
+button:focus {
+  outline:0 !important;
+}

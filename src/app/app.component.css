@@ -1,0 +1,8 @@
+.column-side {
+  width: 20%;
+  height: 100%;
+}
+.column-main {
+  margin-top: -640px;
+  margin-left: 20%;
+}

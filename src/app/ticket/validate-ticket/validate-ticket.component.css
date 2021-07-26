@@ -1,0 +1,14 @@
+.ticket-validation-form {
+  margin-left: 20px;
+}
+button {
+  border: none;
+  color: white;
+  border-radius: 2px;
+  background: blueviolet;
+  margin-left: 10px;
+}
+
+button:focus {
+  outline:0 !important;
+}

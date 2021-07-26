@@ -1,0 +1,23 @@
+.table-of-events {
+  margin-left: 20px;
+  color: white;
+  background-color: blueviolet;
+  border-radius: 2px;
+  margin-bottom: 10px;
+}
+.table-of-events-data {
+  margin-left: 20px;
+}
+.event-information {
+  width: 400px;
+}
+.ticket-info {
+  width: 200px;
+  padding-bottom: 20px;
+}
+.ticket-validation-code {
+  width: 150px;
+}
+.ticket-status {
+  width: 150px;
+}

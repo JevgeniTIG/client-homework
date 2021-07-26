@@ -1,0 +1,35 @@
+<table class="table-of-events">
+  <td class="event-information"><h3>Event</h3></td>
+  <td class="ticket-info"><h3>Ticket Info</h3></td>
+  <td class="ticket-validation-code"><h3>Validation Code</h3></td>
+  <td class="ticket-status"><h3>Validation Status</h3></td>
+</table>
+<table class="table-of-events-data">
+  <div *ngFor="let event of events">
+
+    <td nowrap class="event-information">
+      {{event.basicInfo}}
+    </td>
+
+    <td nowrap class="ticket-info">
+      <div *ngFor="let ticket of event.tickets">
+        <span>{{ticket.basicInfo}}</span>
+      </div>
+    </td>
+
+    <td nowrap class="ticket-validation-code">
+      <div *ngFor="let ticket of event.tickets">
+        <span>{{ticket.validationCode}}</span>
+      </div>
+    </td>
+
+    <td nowrap class="ticket-status">
+      <div *ngFor="let ticket of event.tickets">
+        <span *ngIf="ticket.status === 'VALIDATED'" style="color: red">{{ticket.status}}</span>
+        <span *ngIf="ticket.status === 'NOTVALIDATED'" style="color: green">{{ticket.status}}</span>
+      </div>
+    </td>
+  </div>
+</table>
+
+

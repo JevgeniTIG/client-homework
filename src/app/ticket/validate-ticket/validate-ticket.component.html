@@ -1,0 +1,15 @@
+<form class="ticket-validation-form" [formGroup]="validateForm">
+
+  <mat-form-field class="validation" appearance="fill">
+    <mat-label>Ticket ID</mat-label>
+    <input
+      matInput
+      minlength="1"
+      min="1"
+      formControlName="ticketId">
+  </mat-form-field>
+  <button (click)="submit()">
+    Submit
+  </button>
+
+</form>
